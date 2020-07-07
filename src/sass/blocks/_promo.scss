@@ -1,0 +1,117 @@
+.promo {
+    height: 57.5vw;
+    width: 100vw;
+    background: url('../img/bg.jpg') center (center / cover) no-repeat;
+    padding: 1.67vw 0 0 0;
+    &__title {
+        width: 37vw;
+        height: 10.73vw;
+        margin: 5.52vw 0 0 15.36vw;
+        color: $text-color;
+        font-size: 2.5vw;
+        font-weight: 300;
+        line-height: 2.86vw;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__list {
+        margin: 3.125vw 0 0 17.34vw;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    &__item {
+        position: relative;
+        color: $text-color;
+        font-size: 0.9375vw;
+        font-weight: 300;
+        line-height: 1.875vw;
+        letter-spacing: 0.02vw;
+        &::before {
+            position: absolute;
+            left: -1.62vw;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '';
+            display: block;
+            width: 0.89vw;
+            height: 0.89vw;
+            box-shadow: 0 0.05vw 0.68vw rgba(239, 148, 153, 0.38);
+            border: 0.21vw solid #f7f7fb;
+            background-color: #ef9499;
+            border-radius: 100%;
+        }
+    }
+    &__branch {
+        display: block;
+        position: absolute;
+        top: 42.1875vw;
+        left: 27.5vw;
+        width: 17.81vw;
+        height: 4.01vw;
+        img {
+            width: 100%;
+        }
+    }
+    &__card {
+        position: absolute;
+        top: 31.56vw;
+        left: 36.56vw;
+        width: 44.43vw;
+        height: 27.14vw;
+        z-index: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__info {
+        position: absolute;
+        top: 40.57vw;
+        left: 52.92vw;
+        width: 3.85vw;
+        height: 3.85vw;
+        z-index: 2;
+        img {
+            width: 100%;
+        }
+    }
+    &__nameplate {
+        display: none;
+        position: absolute;
+        top: 30.47vw;
+        left: 53.7vw;
+        width: 10.78vw;
+        height: 12.55vw;
+        z-index: 1;
+        background: url('../img/nameplate.png') center (center / cover) no-repeat;
+        color: $text-color;
+        font-size: 0.73vw;
+        font-weight: 300;
+        letter-spacing: 0.0875vw;
+        text-align: center;
+        padding: 2.5vw 2.24vw 1.51vw 2.24vw;
+        img {
+            width: 100%;
+        }
+    }
+    &__woman {
+        position: absolute;
+        top: 13.91vw;
+        right: 0;
+        width: 45.21vw;
+        height: 39.58vw;
+        img {
+            width: 100%;
+        }
+    }
+    &__wave {
+        position: absolute;
+        top: 46.98vw;
+        left: 0;
+        width: 100vw;
+        height: 8.02vw;
+        img {
+            width: 100%;
+        }
+    }
+}

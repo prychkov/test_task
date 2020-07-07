@@ -1,0 +1,123 @@
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0, .56);
+    z-index: 4;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38.44vw;
+    min-height: 34.84vw;
+    background: url('../img/popup/bg_modal.jpg') center (center / cover) no-repeat;
+    padding: 3.91vw 5.0vw 4.11vw 5.00vw;
+    border-radius: 5%;
+    &_mini {
+        width: 27.29vw;
+        min-height: 17.55vw;
+        padding: 4.01vw 6.67vw 4.27vw 6.67vw;
+        background: url('../../img/popup/bg_thanks.jpg') center (center / cover) no-repeat;
+        border-radius: 10%;
+    }
+    &__close {
+        position: absolute;
+        top: 2.5vw;
+        right: 2.14vw;
+        font-size: 1.5vw;
+        color: #8a97a1;
+        cursor: pointer;
+        &_mini {
+            top: 2.4vw;
+            right: 2.4vw;
+        }
+    }
+    &__subtitle {
+        color: $text-color;
+        font-size: 1.875vw;
+        font-weight: 300;
+        text-align: center;
+        span {
+            font-weight: 600;
+        }
+        &_mini {
+            margin-top: 1.35vw;
+            font-size: 1.5625vw;
+        }
+    }
+    &__descr {
+        color: $text-color;
+        font-size: 0.83vw;
+        font-weight: 300;
+        letter-spacing: 0.02vw;
+        text-align: center;
+        margin-top: 1.2vw;
+    }
+    &__form {
+        margin-top: 1.93vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        select, input {
+            width: 26.04vw;
+            height: 4.17vw;
+            border-radius: 2.08vw;
+            border: 0.05vw solid #fbeeef;
+            background-color: #ffffff;
+            margin-bottom: 0.83vw;
+            padding: 0 2.40vw;        
+            color: #989797;
+            font-size: 0.9375vw;
+            font-weight: 300;
+            letter-spacing: 0.02vw;
+            text-align: left;
+            z-index: 5;
+        }
+    }
+    &__button-img {
+        position: absolute;
+        bottom: 5vw;
+        left: 25.26vw;
+        width: 7.45vw;
+        height: 2.71vw;
+        img {
+            width: 100%;
+        }
+    }
+    &__img {
+        position: absolute;
+        bottom: 5.16vw;
+        left: -5.625vw;
+        width: 13.68vw;
+        height: 20.10vw;
+        z-index: -1;
+        img {
+            width: 100%;
+        }
+    }
+    &__check {
+        width: 4.74vw;
+        height: 4.74vw;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .error {
+        border: 0.05vw solid red;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 0.78vw;
+        font-size: 0.9375vw;
+    }
+}
+
+#education, #thanks {
+    display: none;
+}
