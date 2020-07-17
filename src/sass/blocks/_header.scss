@@ -1,9 +1,11 @@
 .header {
     display: flex;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 0.78125vw 0 0.78125vw;
+    width: 81.25vw;
     &__logo {
         display: block;
-        margin-left: 10.16vw;
         width: 14.58vw;
         height: 6.56vw;
         img {
@@ -16,7 +18,8 @@
         color: $text-color;
         font-size: 0.73vw;
         font-weight: 300;
-        letter-spacing: 0.7px;
+        letter-spacing: 0.037vw;
+        margin-bottom: 0;
     }
     &__map-img {
         width: 4.0625vw;
@@ -31,20 +34,21 @@
         }
     }
     &__addr {
-        width: 10.78vw;
+        width: 10.5vw;
         margin-left: 1.20vw;
+        margin-bottom: 0;
         color: $text-color;
         font-size: 0.83vw;
         font-weight: 300;
         span {
-            font-weight: 700;
+            font-weight: 600;
         }
     }
     &__link {
         padding: 0.5vw 0 0.5vw 0;
         color: #ff6078;
         font-size: 0.625vw;
-        font-weight: 500;
+        font-weight: normal;
         text-transform: uppercase;
         text-decoration: underline;
         &:hover {
@@ -53,11 +57,12 @@
     }
     &__map {
         display: none;
-        position: fixed;
-        width: 400px;
-        height: 300px;
+        position: absolute;
+        width: 20.83vw;
+        height: 15.625vw;
         top: 6.40625vw;
         left: 47.03125vw;
+        z-index: 3;
     }
     &__wrapper {
         width: 13.54vw;
@@ -76,7 +81,7 @@
         padding: 0.52vw;
         width: 1.82vw;
         height: 1.82vw;
-        box-shadow: 0 3px 20px rgba(68, 68, 68, 0.11);
+        box-shadow: 0 0.16vw 1.04vw rgba(68, 68, 68, 0.11);
         background-color: #ffffff;
         border-radius: 100%;
         img {
@@ -90,9 +95,10 @@
         position: relative;
         color: $text-color;
         font-size: 0.625vw;
-        font-weight: 500;
+        font-weight: normal;
         letter-spacing: 0.05vw;
         text-align: right;
+        line-height: 0.625vw;
         &::before {
             position: absolute;
             left: -0.15625vw;
@@ -102,15 +108,18 @@
             display: block;
             width: 0.3125vw;
             height: 0.3125vw;
-            box-shadow: 0 0 7px rgba(79, 160, 55, 0.61);
+            box-shadow: 0 0 0.36vw rgba(79, 160, 55, 0.61);
             background-color: #27b24b;
             border-radius: 100%;
         }
     }
     &__phone {
+        display: block;
+        margin-top: 0.52vw;
         color: $text-color;
         font-size: 1.25vw;
-        font-weight: 500;
+        font-weight: normal;
+        line-height: 1.25vw;
         &:hover {
             color: $text-color;
         }
@@ -118,7 +127,7 @@
     &__schedule {
         color: $text-color;
         font-size: 0.83vw;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 1.09vw;
         letter-spacing: 0.042vw;
         span {
@@ -126,27 +135,36 @@
             letter-spacing: 0.042vw;
         }
     }
-    &__button {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    &__education {
+        position: relative;
         margin-left: 3.33vw;
         width: 11.93vw;
         height: 3.23vw;
+    }
+    &__button {
+        padding: 1.3542vw 1.3021vw 1.25vw 2.92vw;
+        width: 100%;
+        height: 100%;
         border: none;
         border-radius: 1.5625vw;
         background-color: #fefcfb;
         box-shadow: 0vw 0.26vw 0.26vw #ebeaea;
-            img {
-                width: 1.042vw;
-                height: 1.042vw;
-            }
-    }
-    &__button-text {
         color: #1f1d1d;
         font-size: 0.78125vw;
-        font-weight: 500;
-        letter-spacing: 0.0390625vw;
+        font-weight: normal;
+        line-height: 0.78125vw;
+    }
+    &__img-btn {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 1.354vw;
+        width: 1.04vw;
+        height: 1.04vw;
+        line-height: 0;
+        img {
+            width: 100%;
+        }
     }
 }
     

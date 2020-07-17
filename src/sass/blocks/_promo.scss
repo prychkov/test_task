@@ -1,8 +1,13 @@
 .promo {
-    height: 57.5vw;
+    min-height: 57.5vw;
     width: 100vw;
     background: url('../img/bg.jpg') center (center / cover) no-repeat;
     padding: 1.67vw 0 0 0;
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
     &__title {
         width: 37vw;
         height: 10.73vw;
@@ -73,6 +78,12 @@
         z-index: 2;
         img {
             width: 100%;
+        }
+        &_animated {
+            animation: infobeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
     &__nameplate {

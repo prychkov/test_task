@@ -1,0 +1,219 @@
+@media (max-width: 991px) {
+    .promo {
+        min-height: 520px;
+        padding: 32px 20px 0 20px;
+        &__title {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 340px;
+            height: 0;
+            min-height: 100px;
+            font-size: 23px;
+            line-height: 25px;
+            text-align: center;
+        }
+        &__list {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 260px;
+        }
+        &__item {
+            font-size: 10px;
+            line-height: 20px;
+            letter-spacing: 0.45px;
+            &::before {
+                left: -15px;
+                width: 10px;
+                height: 10px;
+                border: 3px solid #f7f7fb;
+            }
+        }
+        &__branch {
+            display: none;
+        }
+        &__card {
+            display: none;
+        }
+        &__info {
+            display: none;
+        }
+        &__nameplate {
+            display: none;
+        }
+        &__woman {
+            top: 310px;
+            right: 0;
+            width: 230px;
+            height: 0;
+        }
+        &__wave {
+            top: 450px;
+            left: 0;
+            width: 100%;
+            height: 0;
+        }
+    }
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        &__logo {
+            width: 135px;
+            height: 61px;
+            margin: 10px 10px 0 0;
+        }
+        &__text {
+            margin: 10px 10px 0 0;
+            width: 105px;
+            font-size: 10px;
+            letter-spacing: 0;
+            line-height: 13px;
+        }
+        &__map-img {
+            width: 60px;
+            height: 60px;
+            margin: 10px 10px 0 0;
+        }
+        &__addr {
+            margin: 10px 10px 0 0;
+            width: 150px;
+            margin-left: 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &__link {
+            padding: 9px 0 9px 0;
+            font-size: 8px;
+            &:hover {
+                color: #ff6078;
+            }
+        }
+        &__map {
+            width: 300px;
+            height: 200px;
+            top: 85px;
+            left: 395px;
+        }
+        &__wrapper {
+            width: 190px;
+            margin: 10px 10px 0 0;
+        }
+        &__items {
+            margin-bottom: 5px;
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+        }
+        &__round {
+            padding: 6px;
+            width: 26px;
+            height: 26px;
+        }
+        &__item {
+            margin-left: 12px;
+        }
+        &__call {
+            font-size: 9px;
+            line-height: 10px;
+            &::before {
+                left: -5px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 4px;
+            }
+        }
+        &__phone {
+            font-size: 17px;
+            margin-top: 5px;
+        }
+        &__schedule {
+            font-size: 12px;
+        }
+        &__education {
+            margin: 10px 10px 0 0;
+            width: 150px;
+            height: 40px;
+        }
+        &__button {
+            padding: 0 0 0 20px;
+            border-radius: 30px;
+            font-size: 11px;
+            line-height: 11px;
+        }
+        &__img-btn {
+            left: 10px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .menu {
+        position: fixed;
+        margin-top: 0;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        transition: 0.6s all;
+        z-index: 10;
+        background-color: rgba($color: #ffffff, $alpha: .9);
+        &_active {
+            right: 0;
+        }
+        &__items {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__item {
+            margin: 5px 0;
+        }
+        &__link {
+            font-size: 15px;
+        }
+        &__shadow {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 26px ;
+        height: 26px;
+        z-index: 11;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #000000;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(11px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(11px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px 70px 10px 20px;
+        width: 200px;
+        height: 45px;
+        border-radius: 43px;
+        text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49);
+        font-size: 9px;
+    }
+}

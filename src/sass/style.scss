@@ -2,9 +2,13 @@
 @import 'libs/fonts';
 
 @import 'base/variables';
+@import 'base/animations';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
+}
+body {
+    overflow-x: hidden;
 }
 
 @import 'blocks/promo';
