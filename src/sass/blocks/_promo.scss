@@ -64,7 +64,7 @@
         left: 36.56vw;
         width: 44.43vw;
         height: 27.14vw;
-        z-index: 0;
+        z-index: 1;
         img {
             width: 100%;
         }
@@ -75,7 +75,7 @@
         left: 52.92vw;
         width: 3.85vw;
         height: 3.85vw;
-        z-index: 2;
+        z-index: 3;
         img {
             width: 100%;
         }
@@ -93,7 +93,7 @@
         left: 53.7vw;
         width: 10.78vw;
         height: 12.55vw;
-        z-index: 1;
+        z-index: 9;
         background: url('../img/nameplate.png') center (center / cover) no-repeat;
         color: $text-color;
         font-size: 0.73vw;
@@ -111,6 +111,7 @@
         right: 0;
         width: 45.21vw;
         height: 39.58vw;
+        z-index: 7;
         img {
             width: 100%;
         }
@@ -121,6 +122,7 @@
         left: 0;
         width: 100vw;
         height: 8.02vw;
+        z-index: 8;
         img {
             width: 100%;
         }

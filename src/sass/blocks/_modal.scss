@@ -5,7 +5,7 @@
     height: 100%;
     top: 0;
     background-color: rgba(0,0,0, .56);
-    z-index: 4;
+    z-index: 11;
 }
 .modal {
     position: absolute;
@@ -75,7 +75,7 @@
             font-weight: 300;
             letter-spacing: 0.02vw;
             text-align: left;
-            z-index: 5;
+            z-index: 12;
         }
     }
     &__button-img {
